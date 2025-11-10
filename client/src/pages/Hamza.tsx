@@ -3,7 +3,7 @@
 import { MessageCircle, Code, Shield, Network, Cloud, Zap, CheckCircle } from "lucide-react"
 import { useState, useEffect } from "react"
 import whatsappIcon from "@/assets/whatsApp.png"
-import hamzaImage from "@/assets/HAMZA.jpg"
+import hamzaImage from "@/assets/Hamza.jpg"
 import TeamMemberCard from '@/components/TeamMemberCard'
 import Navigation from '@/components/Navigation'
 
