@@ -8,7 +8,6 @@ import doctorImage from "../assets/Sidra.png";
 import hamzaImage from "../assets/Hamza.jpg";
 import kinzaImage from "../assets/Kinza.jpeg";
 import amnaImage from "../assets/Amna.png";
-import maheenImage from "../assets/Maheen.jpeg";
 import noorImage from "../assets/Noor.png";
 
 const TeamPage = () => {
@@ -51,15 +50,7 @@ const TeamPage = () => {
 
   // Data for team members (excluding regional managers)
   const teamMembers = [
-    {
-      id: 4,
-      name: "Maheen Javed",
-      title: "Graphic Designer",
-      role: "UI/UX & Brand Designer",
-      image: maheenImage,
-      delay: 0.3,
-      link: "/maheen-graphics"
-    },
+   
     {
       id: 5,
       name: "Noor Faisal",
