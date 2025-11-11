@@ -6,7 +6,6 @@ import Navigation from "../components/Navigation";
 import profilePhoto from "../assets/Muhummad_Yosuf.jpg";
 import doctorImage from "../assets/Sidra.png";
 import hamzaImage from "../assets/Hamza.jpg";
-import kinzaImage from "../assets/Kinza.jpeg";
 import amnaImage from "../assets/Amna.png";
 import noorImage from "../assets/Noor.png";
 
@@ -74,15 +73,7 @@ const TeamPage = () => {
       delay: 0.7,
       link: "/web-regional-manager"
     },
-    {
-      id: 11,
-      name: "Kinza Tariq",
-      title: "Regional Manager - Graphic Design",
-      role: "Senior Graphic Designer",
-      image: kinzaImage,
-      delay: 0.8,
-      link: "/graphic-regional-manager"
-    }
+   
   ]
 
   return (

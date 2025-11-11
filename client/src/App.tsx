@@ -9,7 +9,6 @@ import Doctor2 from "./pages/Doctor2.tsx";
 import Hamza from "./pages/Hamza.tsx";
 import Team from "./pages/Team.tsx";
 import WebRegional from "./pages/RegionalManagerWeb.tsx";
-import GraphicRegionall from "./pages/RegionalManagerGraphic.tsx";
 import NoorWebPortfolio from "./pages/NoorWeb.tsx";
 
 import NotFound from "./pages/Notfound";
@@ -24,7 +23,6 @@ function Router() {
       <Route path="/it-director" component={Hamza} />
       <Route path="/teams" component={Team} />
       <Route path="/web-regional-manager" component={WebRegional} />
-      <Route path="/graphic-regional-manager" component={GraphicRegionall} />
       <Route path="/noor-web" component={NoorWebPortfolio} />
      
       <Route component={NotFound} />
