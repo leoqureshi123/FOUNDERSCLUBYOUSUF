@@ -129,7 +129,6 @@ export default function MalikHamaza() {
                 </div>
                 <span>Contact on WhatsApp</span>
               </a>
-              <p className="text-sm text-muted-foreground">📞 {whatsappNumber}</p>
             </div>
 
             {/* Right - Profile Picture */}
@@ -258,9 +257,7 @@ export default function MalikHamaza() {
               </div>
               <span>Contact on WhatsApp</span>
             </a>
-            <p className="text-muted-foreground">
-              📞 <span className="font-mono text-lg">{whatsappNumber}</span>
-            </p>
+          
             <p className="text-sm text-muted-foreground">
               Direct messaging available • Quick response time • Professional consultation
             </p>

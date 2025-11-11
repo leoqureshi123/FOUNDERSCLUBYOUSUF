@@ -10,7 +10,8 @@ import Hamza from "./pages/Hamza.tsx";
 import Team from "./pages/Team.tsx";
 import WebRegional from "./pages/RegionalManagerWeb.tsx";
 import GraphicRegionall from "./pages/RegionalManagerGraphic.tsx";
-
+import { MaheePortfolioCard } from "./pages/MaheenGraphics.tsx";
+import NoorWebPortfolio from "./pages/NoorWeb.tsx";
 
 import NotFound from "./pages/Notfound";
 
@@ -25,6 +26,8 @@ function Router() {
       <Route path="/teams" component={Team} />
       <Route path="/web-regional-manager" component={WebRegional} />
       <Route path="/graphic-regional-manager" component={GraphicRegionall} />
+      <Route path="/maheen-graphics" component={MaheePortfolioCard} />
+      <Route path="/noor-web" component={NoorWebPortfolio} />
      
       <Route component={NotFound} />
     </Switch>

@@ -58,7 +58,7 @@ const TeamPage = () => {
       role: "UI/UX & Brand Designer",
       image: maheenImage,
       delay: 0.3,
-      link: "https://www.behance.net/maheenjaved3"
+      link: "/maheen-graphics"
     },
     {
       id: 5,
@@ -67,7 +67,7 @@ const TeamPage = () => {
       role: "Proficient in MS Office (Word, PowerPoint, Excel)",
       image: noorImage,
       delay: 0.35,
-     
+      link: "/noor-web"
     }
     
   ]
