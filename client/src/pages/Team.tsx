@@ -11,9 +11,19 @@ import noorImage from "../assets/Noor.png";
 
 const TeamPage = () => {
   const [mounted, setMounted] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0)
+    // Also set a small delay to ensure scroll happens after render
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 100)
     setMounted(true)
+    setIsLoaded(true)
+    
+    return () => clearTimeout(timer)
   }, [])
 
   // Data for leadership team

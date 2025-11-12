@@ -22,7 +22,7 @@ export const stores: Store[] = [
   { id: '13', name: 'Yours Clothing', url: 'https://www.yoursclothing.co.uk', category: 'Fashion', imageType: 'handbag' },
   { id: '14', name: 'Slate & Stitch', url: 'https://theslateandstitch.com', category: 'Handmade/Clothing', imageType: 'handmade' },
   { id: '15', name: 'Baskets Galore', url: 'https://basketsgalore.co.uk', category: 'Gifts', imageType: 'gifts' },
-  { id: '16', name: 'Bonsoir of London', url: 'https://bonsoiroflondon.com', category: 'Nightwear', imageType: 'nightwear' },
+  { id: '16', name: 'Bonsoir of London', url: 'https://bonsoirflondon.com', category: 'Nightwear', imageType: 'nightwear' },
   { id: '17', name: 'Misi Underwear', url: 'https://www.misiunderwear.com', category: 'Leak Proof UnderGarments', imageType: 'homedecor' },
   { id: '18', name: 'Nighty Night', url: 'https://nightynight.pk/collections/sexy-lingerie', category: 'Lingerie', imageType: 'nightwear2' },
   { id: '19', name: 'PinkDressing', url: 'https://pinkdressing.com', category: 'Lingerie & Bras', imageType: 'fitness' },
@@ -35,4 +35,7 @@ export const stores: Store[] = [
   { id: '26', name: 'NA-KD', url: 'https://www.na-kd.com', category: 'Fashion', imageType: 'image3' },
   { id: '27', name: 'Tfi Lingerie', url: 'https://tfilingerie.com', category: 'Lingerie', imageType: 'sincity' },
   { id: '28', name: 'Luuvra Lingerie', url: 'https://luuvra.myshopify.com', category: 'Lingerie', imageType: 'nightcity3' },
+  // New stores
+  { id: '29', name: 'Shop Indian', url: 'https://seyuri.com/', category: 'Ethnic Wear', imageType: 'shopindian' },
+  { id: '30', name: 'Shop Pakistan', url: 'https://www.stringnthread.com/', category: 'Traditional Clothing', imageType: 'shoppakistan' },
 ];

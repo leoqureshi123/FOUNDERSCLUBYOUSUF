@@ -30,6 +30,8 @@ import image3 from '../assets/image3.png';
 import sincityImage from '../assets/Sincity.png';
 import sincity2Image from '../assets/Sincity2.png';
 import nightcity3Image from '../assets/Nighty2.png';
+import shopindianImage from '../assets/ShopIndian.png';
+import shoppakistanImage from '../assets/ShopPakistan.png';
 
 interface StoreCardProps {
   name: string;
@@ -95,6 +97,9 @@ const imageMap: Record<string, string> = {
   image1: image1,
   image2: image2,
   image3: image3,
+  // New image mappings
+  shopindian: shopindianImage,
+  shoppakistan: shoppakistanImage,
   // Fallback mappings
   'Leak Proof UnderGarments': fitnessImage,
   'Women Clothing': womensImage,
@@ -147,16 +152,16 @@ export default function StoreCard({ name, url, category, imageType, delay = 0, i
           loading="lazy"
         />
         
-        <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300 z-20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-30 group-hover:opacity-40 transition-opacity duration-300 z-20" />
         
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-transparent to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
         
         <div className="absolute top-3 right-3 bg-gradient-to-br from-accent/90 to-primary/90 backdrop-blur-sm p-2 rounded-lg opacity-100 group-hover:opacity-100 transition-all duration-300 shadow-lg shadow-accent/50 z-30">
           <ExternalLink className="w-4 h-4 text-white" />
         </div>
 
         <div 
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20"
+          className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20"
           style={{
             animation: 'greenShine 2s ease-in-out infinite',
             animationPlayState: 'paused',
