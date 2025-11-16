@@ -38,4 +38,8 @@ export const stores: Store[] = [
   // New stores
   { id: '29', name: 'Shop Indian', url: 'https://seyuri.com/', category: 'Ethnic Wear', imageType: 'shopindian' },
   { id: '30', name: 'Shop Pakistan', url: 'https://www.stringnthread.com/', category: 'Traditional Clothing', imageType: 'shoppakistan' },
+  // Added new stores
+  { id: '31', name: 'Lonca', url: 'https://lonca.co', category: 'Fashion', imageType: 'lonca' },
+  { id: '32', name: 'Zeus Attire', url: 'https://zeusattire.com', category: 'Fashion', imageType: 'zeus' },
+  { id: '33', name: 'Fleshlight', url: 'https://www.fleshlight.com', category: 'Adult Products', imageType: 'fleshlight' },
 ];

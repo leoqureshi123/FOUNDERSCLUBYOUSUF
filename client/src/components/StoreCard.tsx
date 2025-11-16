@@ -32,6 +32,10 @@ import sincity2Image from '../assets/Sincity2.png';
 import nightcity3Image from '../assets/Nighty2.png';
 import shopindianImage from '../assets/ShopIndian.png';
 import shoppakistanImage from '../assets/ShopPakistan.png';
+// Added new image imports
+import loncaImage from '../assets/Lonca.png';
+import zeusImage from '../assets/Zeus.png';
+import fleslightImage from '../assets/Fleslight.jpeg'; // Corrected filename with typo
 
 interface StoreCardProps {
   name: string;
@@ -100,6 +104,10 @@ const imageMap: Record<string, string> = {
   // New image mappings
   shopindian: shopindianImage,
   shoppakistan: shoppakistanImage,
+  // Added new image mappings
+  lonca: loncaImage,
+  zeus: zeusImage,
+  fleshlight: fleslightImage, // Updated to correct image variable
   // Fallback mappings
   'Leak Proof UnderGarments': fitnessImage,
   'Women Clothing': womensImage,
