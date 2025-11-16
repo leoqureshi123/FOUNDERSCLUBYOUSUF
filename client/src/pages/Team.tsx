@@ -8,6 +8,7 @@ import doctorImage from "../assets/Sidra.png";
 import hamzaImage from "../assets/Hamza.jpg";
 import amnaImage from "../assets/Amna.png";
 import noorImage from "../assets/Noor.png";
+import asmaImage from "../assets/Asma.jpeg";
 
 const TeamPage = () => {
   const [mounted, setMounted] = useState(false)
@@ -68,7 +69,8 @@ const TeamPage = () => {
       image: noorImage,
       delay: 0.35,
       link: "/noor-web"
-    }
+    },
+   
     
   ]
 
@@ -83,6 +85,16 @@ const TeamPage = () => {
       delay: 0.7,
       link: "/web-regional-manager"
     },
+
+     {
+      id: 6,
+      name: "Asma Sattar",
+      title: "Senior Web Developer",
+      role: "Full Stack Web Developer",
+      image: asmaImage,
+      delay: 0.4,
+      link: "/asma"
+    }
    
   ]
 
