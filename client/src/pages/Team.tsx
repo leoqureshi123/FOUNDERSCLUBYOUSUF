@@ -70,6 +70,17 @@ const TeamPage = () => {
       delay: 0.35,
       link: "/noor-web"
     },
+
+    
+     {
+      id: 6,
+      name: "Asma Sattar",
+      title: "Senior Web Developer",
+      role: "Full Stack Web Developer",
+      image: asmaImage,
+      delay: 0.4,
+      link: "/asma"
+    }
    
     
   ]
@@ -86,15 +97,6 @@ const TeamPage = () => {
       link: "/web-regional-manager"
     },
 
-     {
-      id: 6,
-      name: "Asma Sattar",
-      title: "Senior Web Developer",
-      role: "Full Stack Web Developer",
-      image: asmaImage,
-      delay: 0.4,
-      link: "/asma"
-    }
    
   ]
 

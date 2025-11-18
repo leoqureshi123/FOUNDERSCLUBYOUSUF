@@ -42,4 +42,5 @@ export const stores: Store[] = [
   { id: '31', name: 'Lonca', url: 'https://lonca.co', category: 'Fashion', imageType: 'lonca' },
   { id: '32', name: 'Zeus Attire', url: 'https://zeusattire.com', category: 'Fashion', imageType: 'zeus' },
   { id: '33', name: 'Fleshlight', url: 'https://www.fleshlight.com', category: 'Adult Products', imageType: 'fleshlight' },
+  { id: '34', name: 'Saravelli', url: 'https://saravelli.com', category: 'Fashion', imageType: 'saravelli' },
 ];

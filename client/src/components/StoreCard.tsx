@@ -36,6 +36,7 @@ import shoppakistanImage from '../assets/ShopPakistan.png';
 import loncaImage from '../assets/Lonca.png';
 import zeusImage from '../assets/Zeus.png';
 import fleslightImage from '../assets/Fleslight.jpeg'; // Corrected filename with typo
+import saravelliImage from '../assets/Saravelli.webp';
 
 interface StoreCardProps {
   name: string;
@@ -108,6 +109,7 @@ const imageMap: Record<string, string> = {
   lonca: loncaImage,
   zeus: zeusImage,
   fleshlight: fleslightImage, // Updated to correct image variable
+  saravelli: saravelliImage,
   // Fallback mappings
   'Leak Proof UnderGarments': fitnessImage,
   'Women Clothing': womensImage,
