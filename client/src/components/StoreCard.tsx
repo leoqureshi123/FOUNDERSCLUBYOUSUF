@@ -158,8 +158,6 @@ export default function StoreCard({ name, url, category, imageType, delay = 0, i
             filter: `hue-rotate(${index * 15}deg) saturate(1.1)`,
             transform: `rotate(${rotation}deg) scale(1.05)`,
           }}
-          // Added loading attribute to ensure images load properly on mobile
-          loading="lazy"
         />
         
         <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-30 group-hover:opacity-40 transition-opacity duration-300 z-20" />

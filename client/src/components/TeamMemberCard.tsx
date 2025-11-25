@@ -23,13 +23,13 @@ export default function TeamMemberCard({
   // Render as anchor tag for external links, Link component for internal routes
   if (isExternalLink) {
     return (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="block group w-full max-w-md mx-auto">
-        <div className="relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 group-hover:shadow-xl h-full border-2 border-purple-500">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="block mt-12 group w-full max-w-md mx-auto">
+        <div className="relative overflow-hidden rounded-2xl shadow-lg  transition-all duration-300 group-hover:shadow-xl h-full border-2 border-purple-500">
           <div className="relative aspect-square overflow-hidden">
             <img 
               src={imageUrl} 
               alt={altText} 
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform  duration-500 group-hover:scale-105"
             />
             {/* Purple shine effect overlay */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -80,7 +80,7 @@ export default function TeamMemberCard({
   return (
     <div className="block group w-full max-w-md mx-auto">
       <div className="relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 group-hover:shadow-xl h-full border-2 border-purple-500">
-        <div className="relative aspect-square overflow-hidden">
+        <div className="relative aspect-square overflow-hidden pt-4 pb-4">
           <img 
             src={imageUrl} 
             alt={altText} 

@@ -7,9 +7,10 @@ import portfolioImage3 from "../assets/B (3).jpeg"
 import portfolioImage4 from "../assets/B (4).jpeg"
 import portfolioImage5 from "../assets/B (5).jpeg"
 import portfolioImage6 from "../assets/B (6).jpeg"
-import cvImage from "../assets/Huma CV.jpeg"
 import mailIcon from "../assets/Mail.png"
+import cvImage from "../assets/Huma CV.jpeg"
 import portfolioPdf from "../assets/BatoolPdf.pdf"
+import Navigation from '@/components/Navigation'
 
 export default function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -23,7 +24,9 @@ export default function Portfolio() {
     }, 100)
     setIsLoaded(true)
     
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(timer)
+    }
   }, [])
 
   const skills = [
@@ -68,8 +71,7 @@ export default function Portfolio() {
   ]
 
   const handleDownloadCV = () => {
-    // In a real application, this would download the actual CV file
-    // For now, we'll just open the CV image in a new tab
+    // Open the CV image in a new tab
     window.open(cvImage, '_blank');
   }
 
@@ -82,7 +84,7 @@ export default function Portfolio() {
     link.click();
     document.body.removeChild(link);
   }
-
+  
   const handleGoBack = () => {
     window.history.back();
   }
@@ -121,7 +123,7 @@ export default function Portfolio() {
         `}
       </style>
       
-    
+      <Navigation />
       
       {/* Back Button */}
       <div className="fixed top-24 left-6 z-20">
@@ -172,7 +174,6 @@ export default function Portfolio() {
                   animation: 'blink 1s infinite',
                 }}
               >
-                <Mail size={18} />
                 Download CV
               </button>
               
@@ -298,13 +299,6 @@ export default function Portfolio() {
             <span className="text-xl font-bold">Zillehuma Batool</span>
           </div>
           <p className="text-zinc-500 mb-6">Graphic Designer | Faisalabad, Pakistan</p>
-          <a
-            href="mailto:zillehuma.batool@gmail.com"
-            className="inline-flex items-center gap-2 text-amber-500 hover:text-amber-400 transition-colors"
-          >
-            <img src={mailIcon} alt="Mail" className="w-4 h-4" />
-            zillehuma.batool@gmail.com
-          </a>
           <div className="flex justify-center gap-2 mt-8">
             <div className="w-3 h-3 bg-amber-500 rounded-full" />
             <div className="w-3 h-3 bg-white rounded-full" />

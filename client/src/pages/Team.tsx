@@ -40,6 +40,10 @@ const TeamPage = () => {
       link: "/doctor2"
     },
   
+   
+  ]
+
+   const itDirectors = [
     {
       id: 3,
       name: "Malik Hamza Ahmad",
@@ -48,21 +52,23 @@ const TeamPage = () => {
       image: hamzaImage,
       delay: 0.2,
       link: "/it-director"
-    },
+    }
   ]
 
   // Data for team members (excluding regional managers)
   const teamMembers = [
-   
-    {
-      id: 5,
-      name: "Noor Faisal",
-      title: "Web Developer",
-      role: "Proficient in MS Office (Word, PowerPoint, Excel)",
-      image: noorImage,
-      delay: 0.35,
-      link: "/noor-web"
+
+     {
+      id: 8,
+      name: "Zillehuma Batool",
+      title: "Graphic Designer",
+      role: "Creative and detail-oriented Graphic Designer",
+      image: batoolImage,
+      delay: 0.5,
+      link: "/batool"
     },
+   
+    
 
     
     
@@ -77,29 +83,21 @@ const TeamPage = () => {
     },
    
     {
-      id: 8,
-      name: "Zillehuma Batool",
-      title: "Graphic Designer",
-      role: "Creative and detail-oriented Graphic Designer",
-      image: batoolImage,
-      delay: 0.5,
-      link: "/batool"
-    }
+      id: 5,
+      name: "Noor Faisal",
+      title: "Web Developer",
+      role: "Proficient in MS Office (Word, PowerPoint, Excel)",
+      image: noorImage,
+      delay: 0.35,
+      link: "/noor-web"
+    },
+   
     
   ]
 
   // Data for regional managers
   const regionalManagers = [
 
-      {
-      id: 2,
-      name: "Dr. Sidra Tul Muntaha",
-      title: "Regional Manager",
-      role: "DPT Department (UAE)",
-      image: doctorImage,
-      delay: 0.1,
-      link: "/doctor"
-    },
     {
       id: 10,
       name: "Amna Shahid",
@@ -110,8 +108,31 @@ const TeamPage = () => {
       link: "/web-regional-manager"
     },
 
-   
+      {
+      id: 2,
+      name: "Dr. Sidra Tul Muntaha",
+      title: "Regional Manager",
+      role: "DPT Department (UAE)",
+      image: doctorImage,
+      delay: 0.1,
+      link: "/doctor"
+    },
+    
+
+     /* {
+      id: 3,
+      name: "Malik Hamza Ahmad",
+      title: "IT Director",
+      role: "IT Specialist & Digital Systems Expert",
+      image: hamzaImage,
+      delay: 0.2,
+      link: "/it-director"
+    }, */
+
   ]
+
+  // Data for IT Director (to be shown after Our Team section)
+ 
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -168,7 +189,7 @@ const TeamPage = () => {
       {/* Officials Section */}
       <div className="px-4 sm:px-6 lg:px-8 py-16">
         <div className={`mb-12 text-center ${mounted ? "animate-slide-in-right" : "opacity-0"}`}>
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2">Our Officials</h2>
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2">Owner & Ceo</h2>
           <p className="text-muted-foreground">Our executive leadership driving innovation</p>
         </div>
 
@@ -262,6 +283,43 @@ const TeamPage = () => {
                   imageUrl={member.image}
                   link={member.link}
                   altText={`${member.name} - ${member.role}`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="my-20 flex items-center gap-4 max-w-5xl mx-auto">
+          <div className="flex-1 h-px bg-border"></div>
+          <div className="text-muted-foreground text-sm font-medium">IT Director</div>
+          <div className="flex-1 h-px bg-border"></div>
+        </div>
+
+        {/* IT Director Section */}
+        <div>
+          <div className={`mb-12 text-center ${mounted ? "animate-slide-in-right" : "opacity-0"}`}>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2">IT Director</h2>
+            <p className="text-muted-foreground">Leading our technical vision and infrastructure</p>
+          </div>
+
+          {/* Using the same card style as home page */}
+          <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+            {itDirectors.map((director) => (
+              <div
+                key={director.id}
+                style={{
+                  animation: mounted ? `fadeInUp 0.6s ease-out ${director.delay}s backwards` : "none",
+                }}
+                className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(25%-2rem)]"
+              >
+                <TeamMemberCard
+                  name={director.name}
+                  title={director.title}
+                  role={director.role}
+                  imageUrl={director.image}
+                  link={director.link}
+                  altText={`${director.name} - ${director.role}`}
                 />
               </div>
             ))}

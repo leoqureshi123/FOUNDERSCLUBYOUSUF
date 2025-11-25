@@ -126,29 +126,11 @@ export default function MalikHamaza() {
                 and IT infrastructure. Skilled in building secure, scalable platforms.
               </p>
 
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-white font-bold py-4 px-8 rounded-lg transition-all duration-200 ease-in-out"
-                style={{
-                  backgroundColor: '#25D366',
-                  animation: 'blink 1s infinite',
-                }}
-              >
-                <div className="w-6 h-6 relative">
-                  <img 
-                    src={whatsappIcon} 
-                    alt="WhatsApp" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <span>Contact on WhatsApp</span>
-              </a>
+
             </div>
 
             {/* Right - Profile Picture */}
-            <div className="flex justify-center">
+            <div className="flex justify-center pt-8 pb-8">
               <TeamMemberCard
                 name="Malik Hamza"
                 title="IT Director"
@@ -250,34 +232,9 @@ export default function MalikHamaza() {
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-foreground">Need IT Services?</h2>
           <p className="text-xl text-muted-foreground mb-10">
-            Get in touch directly on WhatsApp for quick response and solutions
+            GET IN TOUCH
           </p>
-
-          <div className="space-y-4">
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 text-white font-bold py-4 px-12 rounded-lg text-lg transition-all duration-200 ease-in-out w-full md:w-auto"
-              style={{
-                backgroundColor: '#25D366',
-                animation: 'blink 1s infinite',
-              }}
-            >
-              <div className="w-8 h-8 relative">
-                <img 
-                  src={whatsappIcon} 
-                  alt="WhatsApp" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <span>Contact on WhatsApp</span>
-            </a>
           
-            <p className="text-sm text-muted-foreground">
-              Direct messaging available • Quick response time • Professional consultation
-            </p>
-          </div>
         </div>
       </section>
 
