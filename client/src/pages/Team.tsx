@@ -8,7 +8,8 @@ import doctorImage from "../assets/Sidra.png";
 import hamzaImage from "../assets/Hamza.jpg";
 import amnaImage from "../assets/Amna.png";
 import noorImage from "../assets/Noor.png";
-import asmaImage from "../assets/Asma.jpeg";
+import roohImage from "../assets/Rooh.png";
+import batoolImage from "../assets/Batool.jpg";
 
 const TeamPage = () => {
   const [mounted, setMounted] = useState(false)
@@ -38,15 +39,7 @@ const TeamPage = () => {
       delay: 0,
       link: "/doctor2"
     },
-    {
-      id: 2,
-      name: "Dr. Sidra Tul Muntaha",
-      title: "Regional Manager",
-      role: "DPT Department (UAE)",
-      image: doctorImage,
-      delay: 0.1,
-      link: "/doctor"
-    },
+  
     {
       id: 3,
       name: "Malik Hamza Ahmad",
@@ -72,21 +65,41 @@ const TeamPage = () => {
     },
 
     
-     {
-      id: 6,
-      name: "Asma Sattar",
-      title: "Senior Web Developer",
-      role: "Full Stack Web Developer",
-      image: asmaImage,
-      delay: 0.4,
-      link: "/asma"
-    }
+    
+    {
+      id: 7,
+      name: "Roha Zulfiqar",
+      title: "Data Analyst",
+      role: "Python & C++ Developer | Power BI, Tableau",
+      image: roohImage,
+      delay: 0.45,
+      link: "/roh-zulfiqar"
+    },
    
+    {
+      id: 8,
+      name: "Zillehuma Batool",
+      title: "Graphic Designer",
+      role: "Creative and detail-oriented Graphic Designer",
+      image: batoolImage,
+      delay: 0.5,
+      link: "/batool"
+    }
     
   ]
 
   // Data for regional managers
   const regionalManagers = [
+
+      {
+      id: 2,
+      name: "Dr. Sidra Tul Muntaha",
+      title: "Regional Manager",
+      role: "DPT Department (UAE)",
+      image: doctorImage,
+      delay: 0.1,
+      link: "/doctor"
+    },
     {
       id: 10,
       name: "Amna Shahid",

@@ -1,6 +1,6 @@
 "use client"
 
-import { MessageCircle, Code, Shield, Network, Cloud, Zap, CheckCircle } from "lucide-react"
+import { MessageCircle, Code, Shield, Network, Cloud, Zap, CheckCircle, ArrowLeft } from "lucide-react"
 import { useState, useEffect } from "react"
 import whatsappIcon from "@/assets/whatsApp.png"
 import hamzaImage from "@/assets/Hamza.jpg"
@@ -22,6 +22,10 @@ export default function MalikHamaza() {
     
     return () => clearTimeout(timer)
   }, [])
+  
+  const handleGoBack = () => {
+    window.history.back();
+  }
 
   const whatsappNumber = "+923326940932"
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=Hi%20Malik,%20I%20need%20IT%20services`
@@ -71,6 +75,18 @@ export default function MalikHamaza() {
   return (
     <div className="min-h-screen bg-background" id="top">
       <Navigation />
+      
+      {/* Back Button */}
+      <div className="fixed top-24 left-6 z-20">
+        <button
+          onClick={handleGoBack}
+          className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+        >
+          <ArrowLeft size={20} />
+          Back
+        </button>
+      </div>
+      
       <style>{blinkKeyframes}</style>
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 overflow-hidden">

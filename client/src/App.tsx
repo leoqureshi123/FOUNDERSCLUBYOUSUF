@@ -10,7 +10,8 @@ import Hamza from "./pages/Hamza.tsx";
 import Team from "./pages/Team.tsx";
 import WebRegional from "./pages/RegionalManagerWeb.tsx";
 import NoorWebPortfolio from "./pages/NoorWeb.tsx";
-import AsmaPage from "./pages/Asma.tsx";
+import RohZulfiqar from "./pages/RohZulfiqar.tsx";
+import Batool from "./pages/Batool.tsx";
 
 import NotFound from "./pages/Notfound";
 
@@ -25,7 +26,8 @@ function Router() {
       <Route path="/teams" component={Team} />
       <Route path="/web-regional-manager" component={WebRegional} />
       <Route path="/noor-web" component={NoorWebPortfolio} />
-      <Route path="/asma" component={AsmaPage} />
+      <Route path="/roh-zulfiqar" component={RohZulfiqar} />
+      <Route path="/batool" component={Batool} />
      
       <Route component={NotFound} />
     </Switch>

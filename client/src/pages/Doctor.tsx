@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Mail, Phone, Award, Zap, BookOpen, Stethoscope, MessageCircle } from "lucide-react"
+import { Mail, Phone, Award, Zap, BookOpen, Stethoscope, MessageCircle, ArrowLeft } from "lucide-react"
 import doctorImage from "../assets/Sidra.png";
 import Navigation from '@/components/Navigation';
 
@@ -19,6 +19,10 @@ export default function ProfilePage() {
     
     return () => clearTimeout(timer)
   }, [])
+  
+  const handleGoBack = () => {
+    window.history.back();
+  }
 
   const skills = [
     "Electrotherapy",
@@ -103,6 +107,18 @@ export default function ProfilePage() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
       <Navigation />
+      
+      {/* Back Button */}
+      <div className="fixed top-24 left-6 z-20">
+        <button
+          onClick={handleGoBack}
+          className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+        >
+          <ArrowLeft size={20} />
+          Back
+        </button>
+      </div>
+      
       {/* Gap between navbar and content */}
       <div className="h-8"></div>
       {/* Animated Background Elements */}

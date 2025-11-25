@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
-import { Download, Mail, ArrowLeft } from "lucide-react"
+import { Mail as MailIcon, Download, ArrowLeft } from "lucide-react"
 import { useParallax } from '@/hooks/useParallax'
-import noorImage from "../assets/Noor.png"
-import noorPortfolio from "../assets/NoorPortfoleo.pdf"
+import roohImage from "../assets/Rooh.png"
 import Navigation from '@/components/Navigation'
 import heroVideo from '@/assets/video.mp4'
+import mailIcon from "../assets/Mail.png"
 
 interface SkillCategory {
   category: string
@@ -13,52 +13,28 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    category: "Technical",
-    items: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Next.js",
-      "Web Development"
-    ]
+    category: "Programming Languages",
+    items: ["Python", "C++", "SQL"]
   },
   {
-    category: "Design",
-    items: [
-      "Graphic Designing",
-      "UI Design",
-      "Web Design"
-    ]
+    category: "Data Analysis Tools",
+    items: ["Power BI", "Tableau", "Excel"]
   },
   {
-    category: "Professional",
-    items: [
-      "Communication",
-      "Problem Solving",
-      "Teamwork",
-      "Leadership"
-    ]
+    category: "Machine Learning",
+    items: ["Scikit-learn", "TensorFlow"]
   },
   {
-    category: "Specializations",
-    items: [
-      "Cyber Security",
-      "Coding",
-      "Social Media Handling",
-      "Blogging"
-    ]
+    category: "Database Management",
+    items: ["MySQL", "PostgreSQL"]
   },
   {
-    category: "Interests",
-    items: [
-      "Learning New Tech",
-      "Travelling",
-      "Books Reading"
-    ]
+    category: "Version Control",
+    items: ["Git", "GitHub"]
   }
 ]
 
-export default function NoorWebPortfolio() {
+export default function RohZulfiqar() {
   const parallaxOffset = useParallax(-0.5)
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -74,9 +50,8 @@ export default function NoorWebPortfolio() {
     return () => clearTimeout(timer)
   }, [])
 
-  const handleDownloadCV = () => {
-    // Open the PDF portfolio in a new tab
-    window.open(noorPortfolio, '_blank');
+  const handleContact = () => {
+    window.location.href = "mailto:rohabibil8@gmail.com";
   }
 
   const handleGoBack = () => {
@@ -175,26 +150,26 @@ export default function NoorWebPortfolio() {
             {/* Left Content */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 text-balance">Noor Faisal</h1>
-                <p className="text-2xl md:text-3xl text-primary font-semibold mb-6">Web Developer & Designer</p>
+                <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 text-balance">Roha Zulfiqar</h1>
+                <p className="text-2xl md:text-3xl text-primary font-semibold mb-6">Data Analyst & Python Developer</p>
                 <p className="text-lg text-foreground/90 leading-relaxed text-balance">
-                  Full-stack web developer with expertise in React, TypeScript, and modern web technologies. 
-                  Skilled in both frontend and backend development, UI/UX design, and cybersecurity. 
-                  Passionate about learning new technologies and creating innovative digital solutions.
+                  Data Analyst with expertise in Python and C++ programming, adept at developing data-driven solutions and
+                  deriving actionable insights. Proficient in data preprocessing, statistical analysis, and visualization.
+                  Experienced in leveraging machine learning techniques to solve complex business problems.
                 </p>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
                 <button
-                  onClick={handleDownloadCV}
+                  onClick={handleContact}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg font-semibold hover:from-primary/90 hover:to-accent/90 transition-colors"
                   style={{
                     animation: 'blink 1s infinite',
                   }}
                 >
-                  <Download size={20} />
-                  Download Portfolio
+                  <img src={mailIcon} alt="Mail" className="w-5 h-5" />
+                  rohabibil8@gmail.com
                 </button>
               </div>
             </div>
@@ -205,8 +180,8 @@ export default function NoorWebPortfolio() {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-3xl blur-2xl opacity-40 animate-glow"></div>
                 <div className="relative bg-card rounded-3xl overflow-hidden shadow-2xl border border-primary/30">
                   <img
-                    src={noorImage}
-                    alt="Noor Faisal"
+                    src={roohImage}
+                    alt="Roha Zulfiqar"
                     className="w-full h-96 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
@@ -247,18 +222,18 @@ export default function NoorWebPortfolio() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-foreground mb-6">Let's Work Together</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            I'm always interested in hearing about new projects and opportunities.
+            I'm always interested in hearing about new projects and opportunities in data analysis and machine learning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={handleDownloadCV}
+              onClick={handleContact}
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition"
               style={{
                 animation: 'blink 1s infinite',
               }}
             >
-              <Download size={20} />
-              Download Portfolio
+              <img src={mailIcon} alt="Mail" className="w-5 h-5" />
+              rohabibil8@gmail.com
             </button>
           </div>
         </div>
