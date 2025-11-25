@@ -208,6 +208,16 @@
   }
 }
 
+/* Reverse spin animation for loading component */
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 /* WhatsApp button blinking animation */
 @keyframes blink {
   0% {
@@ -271,6 +281,10 @@
 
 .animate-pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-reverse {
+  animation: spin-reverse 1s linear infinite;
 }
 
 .bg-gradient-purple-green {
